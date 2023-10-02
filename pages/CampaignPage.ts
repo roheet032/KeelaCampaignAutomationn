@@ -26,15 +26,6 @@ export default class CampaignPage{
 
     }
 
-
-
-    // await page.getByRole('button', { name: 'Create Campaign' }).click();
-    // await page.getByTestId('input-name').fill('Campaign 1');
-    // await page.getByTestId('input-description').click();
-    // await page.getByTestId('input-description').fill('This is test campaign 1');
-    // await page.getByTestId('input-fundraisingGoal').click();
-    // await page.getByTestId('input-fundraisingGoal').fill('5000');
-    // await page.getByTestId('modal-save').click();
   
 
 }

@@ -21,7 +21,7 @@ export default class CampaignRevenue{
 
     constructor(page: Page) {
         this.page = page;
-        this.clickCampaignList = page.getByRole('link', { name: 'Campaign 2' });
+        this.clickCampaignList = page.getByRole('link', { name: 'Campaign 2' }); //add here newly created campaign name for first revenue transaction
         this.hoverFundraising = page.locator('[data-tracking-tab="-Fundraising"]')
         this.clickTransaction = page.getByRole('link', { name: 'Transactions', exact: true })
         this.createNewBtn = page.locator('[data-tracking-button="campaign-transactions-create-new"]')

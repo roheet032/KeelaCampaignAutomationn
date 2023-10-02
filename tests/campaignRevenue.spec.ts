@@ -3,7 +3,7 @@ import LoginPage from '../pages/LoginPage';
 import CampaignRevenue from '../pages/CampaignRevenue';
 
 
-test.only('Campaign First Revenue', async ({ page }) => {
+test('Campaign First Revenue', async ({ page }) => {      //only for newly created campaign
 
     const loginPage = new LoginPage(page);
 
@@ -20,7 +20,7 @@ test.only('Campaign First Revenue', async ({ page }) => {
 
 
 })
-test('Campaign Revenue Transaction', async ({ page }) => {
+test.only('Campaign Revenue Transaction', async ({ page }) => {
     test.slow()
     const loginPage = new LoginPage(page);
 
