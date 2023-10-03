@@ -14,13 +14,13 @@ test.describe('Campaign Module Test', () => {
         await loginPage.gotoKeelaLoginPage();
         await page.waitForTimeout(5000);
 
-        await loginPage.login('rohit.dhyako@keela.com', 'Test@123');
+        await loginPage.login();
         await page.waitForTimeout(5000);
 
 
         const pageLogin=page.getByText("Welcome, Rohit RD!")
 
-        expect(pageLogin).toContainText('Welcome, Rohit RD!')
+        expect(pageLogin).toContainText("Welcome, Rohit RD!")
     
     
   await page.locator('[data-tracking-navigation="Campaigns"]').click();

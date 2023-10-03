@@ -8,7 +8,7 @@ test('Campaign First Donation',async({page})=>{           //only for the newly c
   const loginPage = new LoginPage(page);
 
   await loginPage.gotoKeelaLoginPage();
-  await loginPage.login('rohit.dhyako@keela.com', 'Test@123')
+  await loginPage.login()
   await page.locator('[data-tracking-navigation="Campaigns"]').click(); 
 
   const campaignDonate=new CampaignDonation(page)
@@ -26,7 +26,7 @@ test.only('Campaign Donation Transaction', async ({ page }) => {      //testing 
   const loginPage = new LoginPage(page);
 
   await loginPage.gotoKeelaLoginPage();
-  await loginPage.login('rohit.dhyako@keela.com', 'Test@123')
+  await loginPage.login()
 
   await page.locator('[data-tracking-navigation="Campaigns"]').click();
   const campaignDonate=new CampaignDonation(page)
